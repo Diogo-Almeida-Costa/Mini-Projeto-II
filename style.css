@@ -1,0 +1,103 @@
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #f5f5f5;
+}
+
+.nav
+{
+    flex: 1;
+}
+
+.nav-list
+{
+    list-style: none;
+    display: flex;
+    gap: 32px
+}
+
+.nav-list a
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.perfil
+{
+    flex: 0 0 auto;
+}
+
+.imagem
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.conteudoPrincipal
+{
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+
+.conteudoPrincipal h1
+{
+    margin-bottom: 8px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 4px;
+}
+
+#quemSou
+{
+    padding:20px;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+#projetos
+{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#habilidades
+{
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+#habilidades ul
+{
+    list-style: disc inside;
+    margin-top: 10px;
+}
+
+#habilidades li
+{
+    margin-bottom: 5px;
+}
+
+#contato
+{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.footer
+{
+    text-align: center;
+    padding: 16px;
+    background-color: #f5f5f5;
+    margin-top: auto;
+}
