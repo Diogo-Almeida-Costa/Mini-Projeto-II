@@ -17,19 +17,21 @@ nav ul li a
 
 body
 {
-    /*background-color: rgb(160, 90, 32);*/
-    background-color: #35122e;
+    background-color: #191970;
 }
 
+h1, p
+{
+    color: #363636;
+}
 
 .header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
-    /*background-color: rgb(36, 36, 139);*/
-    background-color: #106fdb;
+    padding: 8px 16px;
+    background-color: #B0C4DE;
 }
 
 .nav
@@ -37,68 +39,73 @@ body
     flex: 1;
 }
 
-.nav-list
+.navList
 {
     list-style: none;
     display: flex;
-    gap: 32px
+    gap: 8px
 }
 
+.navList li
+{
+    border-right: 1px solid #363636;
+    padding-right: 8px;
+    align-items: center; 
+}
 
-.nav-list a
+.navList li:last-child
+{
+    border-right: none;
+}
+
+.navList li
+{
+    border-right: 1px solid #363636;
+}
+
+.navList a
 {
     text-decoration: none;
-    color: #333;
+    color: #363636;
     font-weight: 500;
 }
 
-.perfil
-{
-    flex: 0 0 auto;
-}
-
-.imagem
-{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #333;
-}
 
 .conteudoPrincipal
 {
     max-width: 800px;
     margin: 32px auto;
     padding: 0 16px;
-    background-color: #6b256f;
+    background-color: #B0C4DE;
 }
 
 
 .conteudoPrincipal h1
 {
     margin-bottom: 8px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #191970;
     padding-bottom: 4px;
+    font-size: 25px;
 }
 
 #quemSou
 {
     padding:20px;
-    background-color: #6b256f;
+    background-color: #B0C4DE;
     border-radius: 4px;
+    text-align: justify;
 }
 
 #habilidades
 {
     padding: 20px;
-    background-color: #6b256f;
+    background-color: #B0C4DE;
     border-radius: 4px;
 }
 
 #habilidades ul
 {
-    list-style: disc inside;
+    lListtyle: disc inside;
     margin-top: 10px;
 }
 
@@ -110,7 +117,7 @@ body
 .dadosPessoais
 {
     padding: 20px;
-    background-color: #6b256f;
+    background-color: #B0C4DE;
     border-radius: 4px;
 }
 
@@ -118,7 +125,8 @@ body
 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .divDados
@@ -126,10 +134,75 @@ body
     flex-basis: 45%;
 }
 
+.divDados.perfil
+{
+    flex: 0 0 auto;
+}
+
+.imagem
+{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #191970;
+}
+
 .footer
 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 16px;
-    background-color: #106fdb;
+    background-color: #B0C4DE;
     margin-top: auto;
 }
+
+.footer p
+{
+    margin: 0;
+}
+
+.linkGit
+{
+    display: inline-block;
+}
+
+.githubIcon
+{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: filter .2s;
+}
+
+.header-content {
+    max-width: 1000px; /* mesmo valor do conteúdo da sua página */
+    margin: 0 auto;    /* centraliza a div */
+    padding: 10px 0;
+    
+    
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 60px; /* ou o espaçamento que preferir */
+  }
+
+  header {
+    width: 100%;
+    background-color: lightsteelblue; /* ou a cor que está usando */
+  }
+
+  .menu li {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+  }
+  
+  .menu li:last-child {
+    border-right: none;
+  }
